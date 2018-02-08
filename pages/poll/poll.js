@@ -2,7 +2,7 @@ Page({
   data: {
     options: ['', '']
   },
-  deletOption: function (e) {
+  deleteOption: function (e) {
     var option = e.target.dataset.option;
     this.data.options.splice(option, 1);
     this.refreshOptions();

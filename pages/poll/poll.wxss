@@ -27,6 +27,10 @@ li.option div.input {
   width: 100%;
 }
 
+div.operation text {
+  color: blue;
+}
+
 div.operation text::before {
   content: '+';
   color: blue;
