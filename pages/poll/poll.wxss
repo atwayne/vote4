@@ -1,1 +1,42 @@
-/* pages/poll/poll.wxss */
+view.section {
+  padding: 1em;
+  margin-bottom: 1em;
+  box-shadow: 10px 10px 5px -9px rgba(0, 0, 0, 0.75);
+}
+
+textarea {
+  height: 2em;
+}
+
+input, textarea {
+  padding: 0.5em;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-right-color: darkgray;
+  margin-bottom: 0.5em;
+}
+
+li.option div.delete {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 0.5em;
+}
+
+li.option div.input {
+  display: table-cell;
+  width: 100%;
+}
+
+div.operation text::before {
+  content: '+';
+  color: blue;
+  margin-right: 0.5em;
+}
+
+view.poll-type {
+  padding: 1.5em;
+}
+
+view.poll-type switch {
+  float: right;
+}

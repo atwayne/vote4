@@ -1,5 +1,30 @@
 <view>
   <form bindsubmit='submitPoll'>
-  
+    <view class="poll-meta section">
+      <input type='text' name='title' placeholder='请在这里输入投票标题' focus='true'></input>
+      <textarea name='description' placeholder='请输入投票描述 (可选, 50字以内)' maxlength='50'></textarea>
+    </view>
+    <view class='poll-options section'>
+      <ul>
+        <li class='option' wx:for="{{options}}" wx:key="*this">
+          <div class="delete">
+            <icon type="cancel" size="20" bindtap='deleteOption' data-option='{{index}}' />
+          </div>
+          <div class="input">
+            <input type='text' placeholder='请输入选项 (10字以内)' maxlength='10' value='{{options[index]}}'></input>
+          </div>
+        </li>
+      </ul>
+      <div class='operation' bindtap='addOption'>
+        <text>添加选项</text>
+      </div>
+    </view>
+    <view class='poll-type section'>
+        <text>是否多选</text>
+        <switch name="multi" checked class="selected" />
+    </view>
+    <view class="btn-area section">
+      <button type="primary" formType="submit">确认</button>
+    </view>
   </form>
 </view>
