@@ -1,0 +1,5 @@
+<view class="container">
+  <button bindtap="newPoll">
+    + 发起投票
+  </button>
+</view>

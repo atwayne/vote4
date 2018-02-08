@@ -1,0 +1,11 @@
+/* pages/home/home.wxss */
+
+button {
+  background-color: rgb(68, 199, 103);
+  border-radius: 28px;
+  border: 1px solid rgb(24, 171, 41);
+  color: rgb(255, 255, 255);
+  padding: 20px 31px;
+  text-shadow: rgb(47, 102, 39) 0px 1px 0px;
+  font-size: 23px;
+}
